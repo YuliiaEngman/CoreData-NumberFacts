@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="524.63768115942037" y="-252.45535714285714"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Create User Table View Controller-->
         <scene sceneID="8bI-tx-SUH">
             <objects>
-                <tableViewController id="a4o-gw-MXW" sceneMemberID="viewController">
+                <tableViewController id="a4o-gw-MXW" customClass="CreateUserTableViewController" customModule="CoreData_NumberFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="nPX-5Q-gg9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number Fact" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-3a-w9e">
                                                     <rect key="frame" x="20" y="4" width="374" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -299,6 +299,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="9rr-Xp-Mxw" id="MV2-NQ-Ey0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz1-O9-j1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,11 +344,11 @@
             </objects>
             <point key="canvasLocation" x="-384.05797101449281" y="-900"/>
         </scene>
-        <!--Item 2-->
+        <!--Users-->
         <scene sceneID="cwx-aV-ewy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7CO-2Y-BnP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="1w5-Ur-gc7"/>
+                    <tabBarItem key="tabBarItem" title="Users" id="1w5-Ur-gc7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ElF-31-MPn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
