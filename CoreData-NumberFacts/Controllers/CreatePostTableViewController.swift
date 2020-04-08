@@ -22,7 +22,7 @@ class CreatePostTableViewController: UITableViewController {
     
     private func configurePickerView() {
         pickerView.dataSource = self
-       // pickerView.delegate = self
+        pickerView.delegate = self
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
@@ -42,8 +42,12 @@ extension CreatePostTableViewController: UIPickerViewDataSource {
     
 }
 
-//extension CreatePostTableViewController: UIPickerViewDelegate {
-//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-//        <#code#>
-//    }
-//}
+extension CreatePostTableViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return "Title"
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //<#code#>
+    }
+}
