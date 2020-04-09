@@ -14,11 +14,14 @@
 		0F73E4FB243E37930019027A /* CoreData_NumberFacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E4F9243E37930019027A /* CoreData_NumberFacts.xcdatamodeld */; };
 		0F73E4FD243E37960019027A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F73E4FC243E37960019027A /* Assets.xcassets */; };
 		0F73E500243E37960019027A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F73E4FE243E37960019027A /* LaunchScreen.storyboard */; };
-		0F73E50B243E436D0019027A /* LocalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E50A243E436D0019027A /* LocalUser.swift */; };
-		0F73E50D243E43880019027A /* LocalPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E50C243E43880019027A /* LocalPost.swift */; };
-		0F73E50F243E43A70019027A /* CreatePostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E50E243E43A70019027A /* CreatePostTableViewController.swift */; };
-		0F73E511243E43BB0019027A /* CreateUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E510243E43BB0019027A /* CreateUserTableViewController.swift */; };
+		0F73E50F243E43A70019027A /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E50E243E43A70019027A /* CreatePostViewController.swift */; };
+		0F73E511243E43BB0019027A /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E510243E43BB0019027A /* CreateUserViewController.swift */; };
 		0F73E513243E43D00019027A /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E512243E43D00019027A /* UsersViewController.swift */; };
+		0F73E51A243F753E0019027A /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E516243F753E0019027A /* User+CoreDataClass.swift */; };
+		0F73E51C243F753E0019027A /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E518243F753E0019027A /* Post+CoreDataClass.swift */; };
+		0F73E534243F77E40019027A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E532243F77E40019027A /* User+CoreDataProperties.swift */; };
+		0F73E535243F77E40019027A /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E533243F77E40019027A /* Post+CoreDataProperties.swift */; };
+		0F73E537243F7DA40019027A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73E536243F7DA40019027A /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +34,14 @@
 		0F73E4FC243E37960019027A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F73E4FF243E37960019027A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F73E501243E37960019027A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F73E50A243E436D0019027A /* LocalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUser.swift; sourceTree = "<group>"; };
-		0F73E50C243E43880019027A /* LocalPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPost.swift; sourceTree = "<group>"; };
-		0F73E50E243E43A70019027A /* CreatePostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostTableViewController.swift; sourceTree = "<group>"; };
-		0F73E510243E43BB0019027A /* CreateUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserTableViewController.swift; sourceTree = "<group>"; };
+		0F73E50E243E43A70019027A /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		0F73E510243E43BB0019027A /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		0F73E512243E43D00019027A /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		0F73E516243F753E0019027A /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0F73E518243F753E0019027A /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0F73E532243F77E40019027A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0F73E533243F77E40019027A /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0F73E536243F7DA40019027A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,6 @@
 				0F73E507243E432C0019027A /* Controllers */,
 				0F73E508243E433D0019027A /* Supporting Files */,
 				0F73E501243E37960019027A /* Info.plist */,
-				0F73E4F9243E37930019027A /* CoreData_NumberFacts.xcdatamodeld */,
 			);
 			path = "CoreData-NumberFacts";
 			sourceTree = "<group>";
@@ -81,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				0F73E4F4243E37920019027A /* PostViewController.swift */,
-				0F73E50E243E43A70019027A /* CreatePostTableViewController.swift */,
-				0F73E510243E43BB0019027A /* CreateUserTableViewController.swift */,
+				0F73E50E243E43A70019027A /* CreatePostViewController.swift */,
+				0F73E510243E43BB0019027A /* CreateUserViewController.swift */,
 				0F73E512243E43D00019027A /* UsersViewController.swift */,
 			);
 			path = Controllers;
@@ -103,8 +108,12 @@
 		0F73E509243E43590019027A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0F73E50A243E436D0019027A /* LocalUser.swift */,
-				0F73E50C243E43880019027A /* LocalPost.swift */,
+				0F73E532243F77E40019027A /* User+CoreDataProperties.swift */,
+				0F73E533243F77E40019027A /* Post+CoreDataProperties.swift */,
+				0F73E516243F753E0019027A /* User+CoreDataClass.swift */,
+				0F73E518243F753E0019027A /* Post+CoreDataClass.swift */,
+				0F73E536243F7DA40019027A /* CoreDataManager.swift */,
+				0F73E4F9243E37930019027A /* CoreData_NumberFacts.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,15 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F73E511243E43BB0019027A /* CreateUserTableViewController.swift in Sources */,
+				0F73E511243E43BB0019027A /* CreateUserViewController.swift in Sources */,
 				0F73E4F5243E37920019027A /* PostViewController.swift in Sources */,
-				0F73E50B243E436D0019027A /* LocalUser.swift in Sources */,
 				0F73E4F1243E37920019027A /* AppDelegate.swift in Sources */,
 				0F73E4F3243E37920019027A /* SceneDelegate.swift in Sources */,
-				0F73E50F243E43A70019027A /* CreatePostTableViewController.swift in Sources */,
+				0F73E50F243E43A70019027A /* CreatePostViewController.swift in Sources */,
 				0F73E4FB243E37930019027A /* CoreData_NumberFacts.xcdatamodeld in Sources */,
+				0F73E537243F7DA40019027A /* CoreDataManager.swift in Sources */,
+				0F73E51A243F753E0019027A /* User+CoreDataClass.swift in Sources */,
+				0F73E535243F77E40019027A /* Post+CoreDataProperties.swift in Sources */,
+				0F73E51C243F753E0019027A /* Post+CoreDataClass.swift in Sources */,
+				0F73E534243F77E40019027A /* User+CoreDataProperties.swift in Sources */,
 				0F73E513243E43D00019027A /* UsersViewController.swift in Sources */,
-				0F73E50D243E43880019027A /* LocalPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

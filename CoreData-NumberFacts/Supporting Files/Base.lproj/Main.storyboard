@@ -42,7 +42,7 @@
                     <navigationItem key="navigationItem" id="VoH-cA-Wam">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="Otq-Ya-hNO">
                             <connections>
-                                <segue destination="a4o-gw-MXW" kind="presentation" id="cOO-Gg-BjO"/>
+                                <segue destination="a4o-gw-MXW" kind="presentation" identifier="createUserSegue" id="cOO-Gg-BjO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="524.63768115942037" y="-252.45535714285714"/>
         </scene>
-        <!--Create User Table View Controller-->
+        <!--Create User View Controller-->
         <scene sceneID="8bI-tx-SUH">
             <objects>
-                <tableViewController id="a4o-gw-MXW" customClass="CreateUserTableViewController" customModule="CoreData_NumberFacts" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="a4o-gw-MXW" customClass="CreateUserViewController" customModule="CoreData_NumberFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="nPX-5Q-gg9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,9 +95,6 @@
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-r2-9rS">
                                                     <rect key="frame" x="0.0" y="42" width="414" height="216"/>
-                                                    <connections>
-                                                        <action selector="datePickerChanged:" destination="a4o-gw-MXW" eventType="valueChanged" id="NQD-cw-mag"/>
-                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -138,17 +135,18 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="userTextField" destination="NKu-P5-H5L" id="WBd-FE-QOE"/>
+                        <outlet property="datePicker" destination="3G7-r2-9rS" id="YTt-3g-qBx"/>
+                        <outlet property="usernameTextField" destination="NKu-P5-H5L" id="WBd-FE-QOE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QvF-bb-NaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="524.63768115942037" y="454.6875"/>
         </scene>
-        <!--Create Post Table View Controller-->
+        <!--Create Post View Controller-->
         <scene sceneID="JYb-Pn-dwg">
             <objects>
-                <tableViewController id="8j0-8l-jYb" customClass="CreatePostTableViewController" customModule="CoreData_NumberFacts" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8j0-8l-jYb" customClass="CreatePostViewController" customModule="CoreData_NumberFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="dKm-jc-PAj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +185,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number Fact" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-3a-w9e">
                                                     <rect key="frame" x="20" y="4" width="374" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
